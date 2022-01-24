@@ -1,0 +1,26 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        //The entire page except for navbar (70px)
+        height: calc(100vh - 70px);
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        scroll-snap-type: y mandatory;
+        //For firefox
+        scrollbar-width: none;
+        //For the rest
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        //For each section in sections
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}
