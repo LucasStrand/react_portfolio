@@ -12,14 +12,14 @@ export default function Introduction({ menuOpen, setMenuOpen }) {
         showCursor: true,
         backDelay: 1500,
         backSpeed: 60,
-        strings:['Full Stack Developer', 'Student']
+        strings:['Full Stack Developer', 'Student', 'Caffeine Addict']
       })
   },[])
   return (
       <div className='introduction' id="introduction">
         <div className="left">
           <div className={'imageContainer ' + (menuOpen && 'active')}>
-            <img src="assets/covidGrammer.png" alt="" />
+            <img src="assets/programmerLangs.png" alt="" />
           </div>
         </div>
         <div className="right">
